@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>
+课程表
+</title>
+</head>
+<body>
+<b>请增加课程</b>
+<br>
+<table>
+  <tr>
+      <td>课程</td>
+      <td>专业</td>
+      <td>教师</td>
+      <td>教室</td>
+      <td>人数</td>
+  </tr>
+  <br>
+  <tr>
+   <td>
+      <input type="text" list="课程">
+      <datalist id="课程">
+      <option><b>电子电工学</b></option>
+      <option>高等数学</option>
+      <option>模拟电子技术</option>
+      <option>信号与系统</option>
+	  <option>复变函数</option>
+   </td>
+   <td>
+      <input type="text" list="专业">
+      <datalist id="专业">
+      <option>测控技术与仪器</option>
+      <option>电子信息与科学</option>
+      <option>通信工程</option>
+   </td>
+   <td>
+      <input type="text" list="教师">
+      <datalist id="教师">
+      <option>小白</option>
+      <option>李明</option>
+      <option>小红</option>
+      <option>李华</option>
+   </td>
+   <td>
+      <input type="text" list="教室">
+      <datalist id="教室">
+      <option>211</option>
+      <option>212</option>
+      <option>213</option>
+      <option>214</option>
+   </td>
+   <td>
+      <input type="text" name="username" value="_____________" size="15" style="border:1px :border-bottom:#000000 1px soild;">
+   </td>
+   <td>
+     <input type="button" value="添加">
+   </td>
+   </tr>  
+</table>
+</body>
+</html>
