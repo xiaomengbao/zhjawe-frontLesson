@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+div{
+        width: 900px;
+        overflow: hidden;
+        padding: 8px;
+        border: 1px black solid;
+    }
+    li{
+        list-style: none;
+        display: inline;
+    }
+    select{
+        margin: 20px 0px 0px;
+    }
+    #text{
+       border-top:0px;
+        border-left: 0px;
+        border-right:0px;
+        margin-right: 1px;
+    }
+    ul{
+        display: inline-table;
+        padding: 30px;
+    }
+</style>
+</head>
+<div>
+    <h2>请增加课程</h2>
+    <ul>
+        <li>课程</li>
+        <br/>
+        <select name="select">
+            <option>电子电工学</option>
+            <option>大学物理</option>
+            <option>高等数学</option>
+            <option>线性代数</option>
+        </select>
+    </ul>
+    <ul>
+        <li>专业</li>
+        <br/>
+        <select name="select">
+            <option>测控技术与仪器</option>
+            <option>通讯工程</option>
+            <option>环境工程</option>
+            <option>生物工程</option>
+        </select>
+    </ul>
+    <ul>
+        <li>教师</li>
+        <br/>
+        <select name="select">
+            <option>张老师</option>
+            <option>李老师</option>
+            <option>王老师</option>
+            <option>赵老师</option>
+        </select>
+    </ul>
+    <ul>
+        <li>教室</li>
+        <br/>
+        <select name="select">
+            <option>201</option>
+            <option>202</option>
+            <option>203</option>
+            <option>204</option>
+        </select>
+    </ul>
+    <ul>
+        <li>人数</li>
+        <br/>
+        <br/>
+        <input id="text" type="text" value=""/>
+        <input type="button" value="添加" onclick="add2()">
+    </ul>
+    <input id="xx" type="text" value="" style="width:300px"/>
+</div>
+
+<script type="text/JavaScript">
+function add2()                
+	
+{
+var se=document.getElementsByName("select");
+var ss=document.getElementById("xx");
+var string =document.getElementById("text").value;
+var n=0;
+var m=0;
+for(n=0;n<se.length;n++)
+{
+	var s=se[n];
+	for(m=0;m<s.length;m++)
+	{
+		if(s[m].selected==true)
+		{
+			ss.value+=s[m].value;
+		}
+	}
+}
+ss.value+=string;
+
+}
+</script>
+
+<body>
+</body>
+</html>
